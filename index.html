@@ -1,96 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Educational Public Grammar High School Quetta Balochistan</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Educational Public Grammar High School Kohlu</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#f8fafc;color:#1e293b}
-header{background:#0f172a;color:white;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;flex-wrap:wrap}
-header h1{font-size:17px;line-height:1.3} header h1 span{color:#38bdf8}
-nav a{color:white;text-decoration:none;margin-left:18px;font-size:14px;font-weight:500}
-.hero{background:linear-gradient(rgba(15,23,42,0.85),rgba(15,23,42,0.7)),url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1600');background-size:cover;color:white;text-align:center;padding:100px 20px}
-.hero h2{font-size:40px;margin-bottom:12px} .hero p{font-size:18px;margin-bottom:25px;color:#cbd5e1}
-.btn{background:#38bdf8;color:#0f172a;padding:12px 30px;border-radius:30px;text-decoration:none;font-weight:700;display:inline-block;transition:0.3s}
-.btn:hover{background:#0ea5e9;color:white}
-section{padding:70px 5%}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:35px}
-.card{background:white;padding:28px;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,0.06);text-align:center}
-.card h3{margin:12px 0 8px}
-.section-title{text-align:center;font-size:32px;margin-bottom:10px}
-.section-sub{color:#64748b;text-align:center;max-width:750px;margin:0 auto 20px}
-footer{background:#0f172a;color:#94a3b8;text-align:center;padding:40px 20px;margin-top:20px;line-height:1.8}
-footer a{color:#38bdf8;text-decoration:none}
-.contact-box{background:white;padding:32px;border-radius:16px;max-width:700px;margin:25px auto;box-shadow:0 8px 25px rgba(0,0,0,0.08)}
+*{margin:0; padding:0; box-sizing:border-box; font-family:'Space Grotesk', sans-serif;}
+body{background:#080d1a; color:white; overflow-x:hidden;}
+header{display:flex; justify-content:space-between; align-items:center; padding:15px 20px; background:#0f1424;}
+header .logo{display:flex; align-items:center; gap:10px; font-weight:700; font-size:18px;}
+header .logo img{width:42px; height:42px; border-radius:50%; background:white; padding:3px;}
+.login-btn{background:#e53935; color:white; padding:10px 20px; border-radius:30px; border:none; font-weight:600; cursor:pointer; box-shadow:0 0 15px rgba(229,57,53,0.5);}
+.nav-pill{background:#161c2e; margin:15px; border-radius:50px; display:flex; justify-content:space-around; padding:12px; border:1px solid #222a45;}
+.nav-pill a{color:#aaa; text-decoration:none; text-align:center; font-size:14px;}
+.nav-pill a.active{color:#ff3b3b;}
+.nav-pill a span{display:block; font-size:20px;}
+.hero{text-align:center; padding:40px 20px;}
+.badge{display:inline-block; border:1px solid #1e3a3a; background:#0e1f1f; color:#6ecaca; padding:8px 18px; border-radius:30px; font-size:13px; letter-spacing:1px; margin-bottom:25px;}
+.badge::before{content:'●'; color:#00ffaa; margin-right:8px; animation:blink 1s infinite;}
+@keyframes blink{0%,100%{opacity:1} 50%{opacity:0}}
+.hero h1{font-size:36px; line-height:1.2; font-weight:800;}
+.hero h1 .blue{color:#3dc4ff;}
+.hero h1 .purple{color:#8a7cff;}
+.hero p{color:#8a94b3; margin-top:20px; font-size:15px; line-height:1.6;}
+.btn-main{display:block; width:90%; margin:25px auto 15px; padding:18px; border-radius:15px; border:none; font-size:18px; font-weight:700; background:linear-gradient(90deg,#3dc4ff,#8a7cff); color:#000; cursor:pointer;}
+.btn-sec{display:block; width:90%; margin:0 auto; padding:16px; border-radius:15px; border:1px solid #2a3352; background:#111727; color:white; font-size:16px; font-weight:600;}
+.info-cards{display:grid; grid-template-columns:1fr 1fr; gap:15px; padding:20px; margin-top:30px;}
+.card{background:#111727; border:1px solid #1f2742; border-radius:20px; padding:20px;}
+.card h3{font-size:16px; margin-bottom:8px;}
+.card p{color:#8a94b3; font-size:13px;}
+footer{text-align:center; padding:30px 20px; color:#5a6585; font-size:12px; border-top:1px solid #1f2742; margin-top:20px;}
+.whatsapp{position:fixed; bottom:20px; right:20px; background:#25D366; width:55px; height:55px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:28px; text-decoration:none; color:white; box-shadow:0 0 15px rgba(37,211,102,0.5);}
 </style>
 </head>
 <body>
 
 <header>
-<h1><span>Educational Public</span><br>Grammar High School Quetta</h1>
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#academics">Academics</a>
-<a href="#contact">Contact</a>
-</nav>
+<div class="logo"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"> EP Grammar Kohlu</div>
+<button class="login-btn">→ Student Login</button>
 </header>
 
-<div class="hero" id="home">
-<h2>Educational Public Grammar High School Quetta Balochistan</h2>
-<p>Providing Quality Education from Playgroup to Matric - Building Future Leaders</p>
-<a class="btn" href="#contact">Admission Open 2026</a>
+<div class="nav-pill">
+<a href="#" class="active"><span>⌂</span>Home</a>
+<a href="#courses"><span>📖</span>Courses</a>
+<a href="#batches"><span>◫</span>Batches</a>
+<a href="#gallery"><span>🖼️</span>Gallery</a>
 </div>
 
-<section id="about">
-<h2 class="section-title">About Our School</h2>
-<p class="section-sub">Educational Public Grammar High School, located in Quetta, Balochistan, is committed to providing high-quality, modern and affordable education. We focus on academic excellence, character building, and personal growth of every student.</p>
-<div class="grid">
-<div class="card"><h3>👨‍🏫 Qualified Faculty</h3><p>Experienced and dedicated teachers ensuring best learning outcomes.</p></div>
-<div class="card"><h3>🏫 Modern Environment</h3><p>Clean, safe and well-equipped classrooms with a positive learning atmosphere.</p></div>
-<div class="card"><h3>📚 Complete Education</h3><p>From Playgroup to Class 10th with full preparation for Board Examinations.</p></div>
-</div>
-</section>
+<div class="hero">
+<div class="badge">ADMISSIONS OPEN 2026</div>
+<h1><span class="blue">Shape Your Future</span><br><span class="purple">With EP Grammar Kohlu</span></h1>
+<p>// Quality Education for Kohlu's Youth - From Play Group to Matric. Focus on English, Science & Computer Education.</p>
 
-<section id="academics" style="background:#e0f2fe">
-<h2 class="section-title">Academics & Admissions</h2>
-<p class="section-sub">Admissions are open for the session 2026. Contact us for fee structure and details.</p>
-<div class="grid">
-<div class="card"><h3>Early Years</h3><p><b>Playgroup to Class 5</b><br>Strong foundation with focus on English, Math and Islamiat.</p></div>
-<div class="card"><h3>Middle Section</h3><p><b>Class 6 to Class 8</b><br>Advanced learning with Computer and Science Labs.</p></div>
-<div class="card"><h3>High Section</h3><p><b>Class 9 to Matric</b><br>Complete preparation for Balochistan Board Examinations.</p></div>
-</div>
-</section>
+<button class="btn-main">>_ Start Admission →</button>
+<button class="btn-sec">⚙️ Explore School</button>
 
-<section id="contact">
-<h2 class="section-title">Contact Us</h2>
-<div class="contact-box">
-<p><b>School Name:</b> Educational Public Grammar High School Quetta Balochistan</p>
-<p><b>City:</b> Quetta, Balochistan, Pakistan</p>
-<br>
-<p><b>School Contact:</b> 03334265418</p>
-<p><b>School Email:</b> meerhussain727327@gmail.com</p>
-<br>
-<div style="background:#f1f5f9;padding:15px;border-radius:10px;margin-top:10px">
-<p><b>Website Developed & Edited By:</b></p>
-<p style="font-size:18px;font-weight:700;color:#0f172a">Mir Hussain - Web Developer</p>
-<p><b>Developer Contact:</b> 03121817306</p>
+<div class="info-cards">
+<div class="card"><h3>🏫 Kohlu Campus</h3><p>Educational Public Grammar High School, Main City Kohlu</p></div>
+<div class="card"><h3>📞 Contact</h3><p>03334265418<br>03121817306</p></div>
+<div class="card"><h3>👨‍💻 Developer</h3><p>Mir Hussain<br>Degree College Kohlu / AIOU</p></div>
+<div class="card"><h3>✉️ Email</h3><p>meerhussain727327@gmail.com</p></div>
 </div>
-<br>
-<a class="btn" style="width:100%;text-align:center" href="https://wa.me/923334265418?text=Hello,%20I%20want%20information%20about%20admission%20at%20Educational%20Public%20Grammar%20High%20School%20Quetta">Message on WhatsApp</a>
 </div>
-</section>
 
 <footer>
-<p><b>Educational Public Grammar High School Quetta Balochistan</b><br>
-© 2026 All Rights Reserved<br><br>
-Website Edited by <b>Mir Hussain - Web Developer</b><br>
-Contact: 03121817306 | Email: meerhussain727327@gmail.com<br>
-School Contact: 03334265418</p>
+© 2026 Educational Public Grammar High School Kohlu<br>Developed with ❤️ by Mir Hussain | Puwadi Tribe, Kohlu
 </footer>
+
+<a class="whatsapp" href="https://wa.me/923334265418">W</a>
 
 </body>
 </html>
